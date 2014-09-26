@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="baseLayoutParam">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="commonListViewStyle" parent="baseLayoutParam">
+        <item name="android:drawSelectorOnTop">false</item>
+    </style>
+
+    <style name="mainPageTabsStyle" parent="baseLayoutParam">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/title_gray</item>
+    </style>
+
+    <style name="mainPagerStyle" parent="baseLayoutParam">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cardRelativeLayoutStyle" parent="baseLayoutParam">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/background_cards</item>
+    </style>
+
+    <style name="cardImageViewStyle">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_height">95dp</item>
+        <item name="android:layout_width">95dp</item>
+    </style>
+
+    <style name="baseCardTextStyle" parent="baseLayoutParam">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@id/thumbnail_image</item>
+        <item name="android:layout_below">@id/question_title</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>
+
+    <style name="cardQuestionTitleStyle" parent="baseCardTextStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
